@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Military Voca - 당직 단어장</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>학습 범위 선택</h2>
+            </div>
+            
+            <div class="day-item special-item">
+                <input type="checkbox" id="chk-bookmark">
+                <label for="chk-bookmark">⭐ 오답노트만 보기</label>
+            </div>
+            
+            <hr class="divider">
+
+            <div id="day-list"></div>
+        </aside>
+
+        <main class="main-content">
+            <div class="card">
+                <button id="btn-star" class="star-btn" title="오답노트에 추가">☆</button>
+
+                <div id="status-text" class="status-bar">Loading...</div>
+                
+                <div class="word-box">
+                    <div id="en-word" class="en-word">Ready</div>
+                    <div id="kr-word" class="kr-word">준비</div>
+                </div>
+
+                <div class="btn-group">
+                    <button id="btn-toggle" class="btn-toggle">정답 확인 (Enter)</button>
+                    <button id="btn-next" class="btn-next">다음 단어 (Space)</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
